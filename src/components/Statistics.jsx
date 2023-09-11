@@ -24,12 +24,12 @@ function StatList({ label, percentage, id }) {
   );
 }
 
-Statistics.PropTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.object,
 };
 
-StatList.PropTypes = {
+StatList.propTypes = {
   label: PropTypes.string,
   percentage: PropTypes.number,
   id: PropTypes.string,

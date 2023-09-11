@@ -36,7 +36,7 @@ export default function Profile({
   );
 }
 
-Profile.PropTypes = {
+Profile.propTypes = {
   username: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,

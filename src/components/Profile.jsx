@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from '../css/Profile.module.css';
 
-export default function Profile({
+export function Profile({
   username,
   tag,
   location,

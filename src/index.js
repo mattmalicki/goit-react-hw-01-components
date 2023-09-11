@@ -13,7 +13,7 @@ import transactions from './json/transactions.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     <Profile
       username={user.username}
       tag={user.tag}

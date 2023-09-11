@@ -26,11 +26,11 @@ function StatList({ label, percentage, id }) {
 
 Statistics.PropTypes = {
   title: PropTypes.string,
-  stats: PropTypes.object.isRequired,
+  stats: PropTypes.object,
 };
 
 StatList.PropTypes = {
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+  id: PropTypes.string,
 };

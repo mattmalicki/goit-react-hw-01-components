@@ -10,7 +10,7 @@ export default function Profile({
   views,
   likes,
 }) {
-  reutrn(
+  return (
     <div className={css.profile}>
       <div className={css.description}>
         <img src={imgUrl} alt={username} className={css.avatar} />

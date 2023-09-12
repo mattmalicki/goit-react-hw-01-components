@@ -6,6 +6,7 @@ export function Statistics({ title, stats }) {
   const listItems = stats.map(stat => (
     <ul className={css.statList}>
       <StatisticsList
+        key={stat.id}
         label={stat.label}
         percentage={stat.percentage}
         id={stat.id}

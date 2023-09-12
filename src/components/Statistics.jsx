@@ -4,19 +4,17 @@ import css from '../css/Statistics.module.css';
 
 export function Statistics({ title, stats }) {
   const listItems = stats.map(stat => (
-    <ul className={css.statList}>
-      <StatisticsList
-        key={stat.id}
-        label={stat.label}
-        percentage={stat.percentage}
-        id={stat.id}
-      />
-    </ul>
+    <StatisticsList
+      key={stat.id}
+      label={stat.label}
+      percentage={stat.percentage}
+      id={stat.id}
+    />
   ));
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
-      {listItems}
+      <ul className={css.statList}>{listItems}</ul>
     </section>
   );
 }

@@ -23,7 +23,7 @@ export function Profile({
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{followers}</span>
         </li>
-        <li className={css.statsItem}>
+        <li className={[css.statsItem, css.statsItemEven].join(' ')}>
           <span className={css.label}>Views</span>
           <span className={css.quantity}>{views}</span>
         </li>

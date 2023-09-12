@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       views={user.stats.views}
       likes={user.stats.likes}
     />
-    <Statistics title="Checking" stats={stats} />
+    <Statistics title="upload stats" stats={stats} />
     <FriendList friends={friends} />
     <TransactionHistory items={transactions} />
   </React.StrictMode>

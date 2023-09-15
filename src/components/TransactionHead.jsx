@@ -1,8 +1,8 @@
-// import css from '../css/TransactionHistory.module.css';
+import css from '../css/TransactionHistory.module.css';
 
 export function TableHead() {
   return (
-    <thead>
+    <thead className={css['table-head']}>
       <tr>
         <th>Type</th>
         <th>Amount</th>

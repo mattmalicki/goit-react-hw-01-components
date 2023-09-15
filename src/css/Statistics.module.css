@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 
-.statList {
+.stat-list {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

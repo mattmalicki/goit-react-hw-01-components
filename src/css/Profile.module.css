@@ -51,7 +51,7 @@
   border-top: 1px solid black;
 }
 
-.statsItem {
+.stats-item {
   flex-basis: calc(100% / 3);
   display: flex;
   flex-wrap: nowrap;
@@ -63,7 +63,7 @@
   background-color: #b1d3d3;
 }
 
-.statsItemEven {
+.stats-item-even {
   border-right: 1px solid black;
   border-left: 1px solid black;
 

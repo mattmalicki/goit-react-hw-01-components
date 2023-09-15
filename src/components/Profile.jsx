@@ -19,15 +19,15 @@ export function Profile({
         <p className={css.location}>{location}</p>
       </div>
       <ul className={css.stats}>
-        <li className={css.statsItem}>
+        <li className={css['stats-item']}>
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{followers}</span>
         </li>
-        <li className={[css.statsItem, css.statsItemEven].join(' ')}>
+        <li className={[css['stats-item'], css['stats-item-even']].join(' ')}>
           <span className={css.label}>Views</span>
           <span className={css.quantity}>{views}</span>
         </li>
-        <li className={css.statsItem}>
+        <li className={css['stats-item']}>
           <span className={css.label}>Likes</span>
           <span className={css.quantity}>{likes}</span>
         </li>

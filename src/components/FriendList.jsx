@@ -11,7 +11,7 @@ export function FriendList({ friends }) {
       name={friend.name}
     />
   ));
-  return <ul className={css.friendList}>{friendList}</ul>;
+  return <ul className={css['friend-list']}>{friendList}</ul>;
 }
 
 FriendList.propTypes = {

@@ -1,35 +1,27 @@
 import PropTypes from 'prop-types';
 import css from '../css/Profile.module.css';
 
-export function Profile({
-  username,
-  tag,
-  location,
-  imgUrl,
-  followers,
-  views,
-  likes,
-}) {
+export function Profile({ user }) {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <img src={imgUrl} alt={username} className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
+        <img src={user.avatar} alt={user.username} className={css.avatar} />
+        <p className={css.name}>{user.username}</p>
+        <p className={css.tag}>@{user.tag}</p>
+        <p className={css.location}>{user.location}</p>
       </div>
       <ul className={css.stats}>
         <li className={css['stats-item']}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
+          <span className={css.quantity}>{user.followers}</span>
         </li>
         <li className={[css['stats-item'], css['stats-item-even']].join(' ')}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
+          <span className={css.quantity}>{user.views}</span>
         </li>
         <li className={css['stats-item']}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
+          <span className={css.quantity}>{user.likes}</span>
         </li>
       </ul>
     </div>
@@ -37,11 +29,15 @@ export function Profile({
 }
 
 Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  imgUrl: PropTypes.string,
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
+  user: PropTypes.shape({
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    stats: PropTypes.shape({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+    }),
+  }),
 };

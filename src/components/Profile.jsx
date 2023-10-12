@@ -13,15 +13,15 @@ export function Profile({ user }) {
       <ul className={css.stats}>
         <li className={css['stats-item']}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{user.followers}</span>
+          <span className={css.quantity}>{user.stats.followers}</span>
         </li>
         <li className={[css['stats-item'], css['stats-item-even']].join(' ')}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{user.views}</span>
+          <span className={css.quantity}>{user.stats.views}</span>
         </li>
         <li className={css['stats-item']}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{user.likes}</span>
+          <span className={css.quantity}>{user.stats.likes}</span>
         </li>
       </ul>
     </div>
